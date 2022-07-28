@@ -33,10 +33,9 @@ class MyController {
     @RequestMapping("get2")
     void get2(HttpServletRequest request, HttpServletResponse response) {
         try {
-
-            System.out.println("接收到请求");
             //下载源及内容类型
             String realName = "text2.txt";//文件在客户端的名字
+            System.out.println("前端下载"+realName);
             String path = "D:\\mydisk\\"+realName;//文件在服务器的存储路径
             long fileLength=new File(path).length();
             //response
