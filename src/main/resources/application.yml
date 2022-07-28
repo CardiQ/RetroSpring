@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /test
+spring:
+  datasource:
+    name : test
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password:
+    url: jdbc:mysql://localhost:3306/test
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
