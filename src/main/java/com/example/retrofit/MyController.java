@@ -34,7 +34,7 @@ class MyController {
     void get2(HttpServletRequest request, HttpServletResponse response) {
         try {
             //下载源及内容类型
-            String realName = "text2.txt";//文件在客户端的名字
+            String realName = "text2.txt";//文件在客户端的名字,可改为上传的请求参数
             System.out.println("前端下载"+realName);
             String path = "D:\\mydisk\\"+realName;//文件在服务器的存储路径
             long fileLength=new File(path).length();
